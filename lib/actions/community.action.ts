@@ -40,7 +40,6 @@ export async function createCommunity(
     // Update User model
     user.communities.push(createdCommunity._id);
     await user.save();
-console.log("CC",createCommunity);
 
     return createdCommunity;
   } catch (error) {

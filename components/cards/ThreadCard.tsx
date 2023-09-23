@@ -39,7 +39,7 @@ function ThreadCard({
   comments,
   isComment,
 }: Props) {
-  console.log("Community",community);
+  //console.log("Community",community);
   
   return (
     <article
