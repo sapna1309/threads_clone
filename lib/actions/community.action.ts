@@ -36,10 +36,11 @@ export async function createCommunity(
     });
 
     const createdCommunity = await newCommunity.save();
-
+    
     // Update User model
     user.communities.push(createdCommunity._id);
     await user.save();
+console.log("CC",createCommunity);
 
     return createdCommunity;
   } catch (error) {

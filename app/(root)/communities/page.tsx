@@ -1,7 +1,7 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-import Searchbar from "@/components/shared/SearchBar";
+import SearchBar from "@/components/shared/SearchBar";
 import Pagination from "@/components/shared/Pagination";
 import CommunityCard from "@/components/cards/CommunityCard";
 
@@ -25,12 +25,15 @@ async function Page({
     pageSize: 25,
   });
 
+  console.log("Res",result);
+  
+
   return (
     <>
       <h1 className='head-text'>Communities</h1>
 
       <div className='mt-5'>
-        <Searchbar routeType='communities' />
+        <SearchBar routeType='communities' />
       </div>
 
       <section className='mt-9 flex flex-wrap gap-4'>
