@@ -24,8 +24,6 @@ async function Page({
     pageNumber: searchParams?.page ? +searchParams.page : 1,
     pageSize: 25,
   });
-
-  console.log("Res",result);
   
 
   return (
