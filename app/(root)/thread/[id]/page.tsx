@@ -4,8 +4,8 @@ import { currentUser } from "@clerk/nextjs";
 import Comment from "@/components/forms/Comment";
 import ThreadCard from "@/components/cards/ThreadCard";
 
-import { fetchUser } from "@/lib/actions/user.actions";
-import { fetchThreadById } from "@/lib/actions/thread.actions";
+import { fetchUser } from "@/lib/actions/user.action";
+import { fetchThreadById } from "@/lib/actions/thread.action";
 
 export const revalidate = 0;
 
